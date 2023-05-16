@@ -1,7 +1,7 @@
 from flask import render_template
 
-class UserController:
+class DefaultController:
 
     @staticmethod
-    def search_users():
+    def index():
         return "Teste"

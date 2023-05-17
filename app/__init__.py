@@ -5,9 +5,6 @@ from dotenv import load_dotenv
 from app.extensions import db
 from app.routes import default_bp
 from flask_migrate import Migrate
-from app.models.user import User
-from app.models.address import Address
-from app.models.product import Product
 
 load_dotenv()
 

@@ -4,4 +4,4 @@ class DefaultController:
 
     @staticmethod
     def index():
-        return "Teste"
+        return render_template("pages/index.html")

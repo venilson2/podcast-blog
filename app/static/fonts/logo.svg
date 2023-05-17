@@ -1,0 +1,20 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131 36" width="131" height="36"><title>Geração Samuel</title>
+<defs><linearGradient id="gr" x1="-100%" x2="200%" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#010100"><animate attributeName="offset" values="0;0.8" dur="2s" repeatCount="indefinite" /></stop><stop offset="0.1" stop-color="#fdb750"><animate attributeName="offset" values="0.1;0.9" dur="2s" repeatCount="indefinite" /></stop><stop offset="0.2" stop-color="#010100"><animate attributeName="offset" values="0.2;1" dur="2s" repeatCount="indefinite" /></stop></linearGradient></defs><style>.p{transform-origin: center}</style>
+  <style>
+    @font-face {
+        font-family: 'MinhaFonte';
+        font-style: normal;
+        src: url('materialdesignicons-webfont.ttf') format('truetype');
+    }
+  </style>
+<g fill="#fdb750" opacity="0.5">
+<path id="v1" class="p" d="m0 11h2v14h-2z"><animateTransform attributeName="transform" type="scale" values="1 1; 1 0.6; 1 1; 1 1; 1 1" begin="0s" dur="1s" repeatCount="indefinite"/></path>
+<path id="v2" class="p" d="m4 6h2v24h-2z"><animateTransform attributeName="transform" type="scale" values="1 1; 1 1; 1 1.3; 1 1; 1 1" begin="0s" dur="1s" repeatCount="indefinite"/></path>
+<path id="v3" class="p" d="m8 0h2v36h-2z"><animateTransform attributeName="transform" type="scale" values="1 1; 1 1; 1 1; 1 0.5; 1 1" begin="0s" dur="1s" repeatCount="indefinite"/></path>
+<path id="v4" class="p" d="m12 4h2v28h-2z"><animateTransform attributeName="transform" type="scale" values="1 1; 1 0.6; 1 1; 1 1; 1 1" begin="0s" dur="1s" repeatCount="indefinite"/></path>
+<path id="v5" class="p" d="m16 9h2v18h-2z"><animateTransform attributeName="transform" type="scale" values="1 1; 1 1; 1 1; 1 0.6; 1 1" begin="0s" dur="1s" repeatCount="indefinite"/></path>
+<path id="v6" class="p" d="m20 14h2v8h-2z"><animateTransform attributeName="transform" type="scale" values="1 1; 1 1.6; 1 1; 1 1; 1 1" begin="0s" dur="1s" repeatCount="indefinite"/></path>
+<path id="h" d="m0 17h22v2h-22z"/>
+</g>
+<text x="50%" y="55%" fill="url(#gr)" font-weight="bold" text-anchor="middle" dominant-baseline="middle" font-size="16" font-family="MinhaFonte, sans-serif">Geração Samuel</text>
+</svg>

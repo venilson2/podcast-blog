@@ -12,3 +12,15 @@ def index():
     except Exception as e:
         traceback.print_exc()
         return "Error: An internal server error occurred."
+
+@default_bp.route('/blog')
+def blog():
+    return DefaultController.blog()
+
+@default_bp.route('/episode')
+def episode():
+    return DefaultController.episode()
+
+@default_bp.route('/contato')
+def contact():
+    return DefaultController.contact()

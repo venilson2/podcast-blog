@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+<header id="featured" class="site-featured">
+    <div id="featured-media" class="featured-media has-overlay">
+        <div class="wrapper">
+            <div class="page-title">
+                <h1 class="display">Contato</h1>
+                <h6 class="tagline">Entre em contato hoje</h6>
+            </div>
+        </div>
+        <img src="{{url_for('static', filename='images/sample-featured4.jpg')}}" alt="">
+    </div>
+</header>
+
+<div id="content" class="site-content">
+    <div class="wrapper">
+        <div class="entry-content">
+            <div class="block-columns text-center">
+                <div class="block-column">
+                    <h4>Endereço</h4>
+                    <p class="text-faded text-uppercase">52 Crash Port<br>New Orleans, CA</p>
+                </div>
+                <div class="block-column">
+                    <h4>Nosso Email</h4>
+                    <p class="text-faded text-uppercase">hello@katerina.com</p>
+                </div>
+                <!-- <div class="block-column">
+                    <h4>Phone details</h4>
+                    <p class="text-faded text-uppercase">+1 2345 678 910<br>+8 2234 835 199</p>
+                </div> -->
+            </div>
+            <figure class="block-image alignwide">
+                <a href="https://maps.google.com" target="_blank">
+                    <img src="{{url_for('static', filename='images/sample-digital-map.png')}}" width="760" height="425" alt="">
+                </a>
+            </figure>
+            <form action="contact.html" method="post">
+                <p class="first-column no-margin-bottom"><label for="author">Seu nome <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+                <p class="last-column no-margin-bottom"><label for="email">Seu e-mail <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" required="required"></p>
+                <p class="no-margin-bottom"><label for="message">Sua mensagem <span class="required">*</span></label><textarea id="message" name="message" cols="45" rows="5" maxlength="65525" required="required"></textarea></p>
+                <p class="no-margin-bottom"><input name="submit" type="submit" id="submit" value="Enviar mensagen"></p>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

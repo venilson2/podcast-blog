@@ -1,270 +1,250 @@
-<!DOCTYPE html>
-<html lang="pt-br" class="js no-touchevents csstransitions" data-scheme="alt">
-	<head>
-		<title>Geração Samuel - Home</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<script src="../../static/js/detect-support.js"></script>
-		<link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABlBMVEUAAAD9t1DYlDDHAAAAAXRSTlMAQObYZgAAACBJREFUCNdjAAI2CEpgSAOiNBCq/wdEEDZQECgFUQMEAM3ZCJuu6hSoAAAAAElFTkSuQmCC">
-		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="../../static/css/css2.css" rel="stylesheet">
-		<link rel="stylesheet" href="{{ url_for('static', filename='css/materialdesignicons.css') }}">
-		<link rel="stylesheet" href="../../static/css/fancybox.css">
-		<link rel="stylesheet" href="../../static/css/style.css">
-	</head>
-	<body class="home navbar-sticky navbar-transparent navbar-is-sticky" style="--spacing--nav-height:90px; --spacing--nav-height-sticky:90px;">
-	
-		<header id="featured" class="site-featured">
-			<div id="featured-media" class="featured-media has-overlay">
-				<div class="wrapper">
-					<div class="featured-episode">
-						<div class="featured-episode-text">
-							<p class="text-uppercase text-weight-medium text-opacity-75">Episódio em destaque</p>
-							<h1 class="display"><a href="single-episode.html">#13: The joy of putting ideas into reality and pen to paper</a></h1>
-							<p>Vince Smith met bandmates Jim Kelly and Nancy Gibbs at a Sex Pistols concert, where he tried to kiss Sid Vicious' guitar and got a bloody nose. Together they formed Aftershock.</p>
-						</div>
-						<div class="episode-player episode-type-audio">
-							<audio><source src="../../static/media/preview1.mp3" type="audio/mpeg"></audio>
-							<div class="media-controls">
-								<button class="media-play-pause"></button>
-								<button class="media-rate" data-rates="1.5 0.5 1" title="Playback speed">1x</button>
-								<span class="media-current-time">00:00</span>
-								<div class="media-time-rail"><span class="media-time-rail-current"></span></div>
-								<span class="media-duration">00:41</span>
-								<a class="media-download" href="https://html.liviucerchez.com/common/preview1.mp3" download="" title="Download episode (831.6 KB)"></a>
-								<a class="media-transcript" href="#" title="View transcript"></a>
-							</div>
-						</div>
-					</div>
-					<div class="featured-cover">
-						<a href="single-episode.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-1.jpg" alt=""><span class="flash">new</span><span class="shine-canvas"></span></a>
-					</div>
-					<div class="featured-actions">
-						<div class="featured-actions-main">
-							<!-- <a href="#"><span class="mdi mdi-podcast"></span> Subscribe on Apple Podcasts</a> -->
-							<!-- <a href="#"><span class="mdi mdi-rss"></span> Subscribe using RSS Feed</a> -->
-						</div>
-						<div class="featured-actions-secondary">
-							<a href="episodes.html">Todos os episódios <span class="mdi mdi-trending-neutral"></span></a>
-						</div>
+{% extends "base.html" %}
+
+{% block content %}
+<header id="featured" class="site-featured">
+	<div id="featured-media" class="featured-media has-overlay">
+		<div class="wrapper">
+			<div class="featured-episode">
+				<div class="featured-episode-text">
+					<p class="text-uppercase text-weight-medium text-opacity-75">Episódio em destaque</p>
+					<h1 class="display"><a href="single-episode.html">#13: The joy of putting ideas into reality and pen to paper</a></h1>
+					<p>Vince Smith met bandmates Jim Kelly and Nancy Gibbs at a Sex Pistols concert, where he tried to kiss Sid Vicious' guitar and got a bloody nose. Together they formed Aftershock.</p>
+				</div>
+				<div class="episode-player episode-type-audio">
+					<audio><source src="../../static/media/preview1.mp3" type="audio/mpeg"></audio>
+					<div class="media-controls">
+						<button class="media-play-pause"></button>
+						<button class="media-rate" data-rates="1.5 0.5 1" title="Playback speed">1x</button>
+						<span class="media-current-time">00:00</span>
+						<div class="media-time-rail"><span class="media-time-rail-current"></span></div>
+						<span class="media-duration">00:41</span>
+						<a class="media-download" href="https://html.liviucerchez.com/common/preview1.mp3" download="" title="Download episode (831.6 KB)"></a>
+						<a class="media-transcript" href="#" title="View transcript"></a>
 					</div>
 				</div>
-				<video src="../../static/media/sample-featured-video2.mp4" poster="../../static/tmp/sample-featured-video2.jpg" preload="metadata" muted="" autoplay="" loop="" width="1320" height="756"></video>
 			</div>
-		</header>
-
-		<div id="content" class="site-content">
-			<div class="wrapper">
-				<div class="entry-content">
-					<div class="post-listing style-grid align-content-max">
-						<article class="entry entry-episode has-post-thumbnail">
-							<div class="entry-media">
-								<a href="single-episode.html" class="shine-on-hover"><img src="../../static/../../static/images/sample-540x540-1.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
-							</div>
-							<header class="entry-header">
-								<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#13: The joy of putting ideas into reality and pen to paper</a></h2>
-								<div class="entry-meta">
-									<span class="posted-in">
-										<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
-										<span class="posted-on">
-											<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">Sep 13, 2023</span><span class="updated">Sep 13, 2023</span></a>
-										</span>
-									</span>
-								</div>
-							</header>
-						</article>
-						<article class="entry entry-episode has-post-thumbnail">
-							<div class="entry-media">
-								<a href="single-episode.html" class="shine-on-hover"><img src="../../static/../../static/images/sample-540x540-3.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
-							</div>
-							<header class="entry-header">
-								<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#12: Visiting my best friend's city for the first time</a></h2>
-								<div class="entry-meta">
-									<span class="posted-in">
-										<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
-										<span class="posted-on">
-											<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">Sep 3, 2023</span><span class="updated">Sep 4, 2023</span></a></span>
-									</span>
-								</div>
-							</header>
-						</article>
-						<article class="entry entry-episode episode-type-video has-post-thumbnail">
-							<div class="entry-media">
-								<a href="single-episode-video.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-4.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
-							</div>
-							<header class="entry-header">
-								<h2 class="entry-title"><a href="single-episode-video.html" rel="bookmark">#11: An interesting watch I would definitely recommend</a></h2>
-								<div class="entry-meta">
-									<span class="posted-in">
-										<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
-										<span class="posted-on">
-											<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">Aug 23, 2023</span><span class="updated">Aug 23, 2023</span></a></span>
-									</span>
-								</div>
-							</header>
-						</article>
-						<article class="entry entry-episode has-post-thumbnail">
-							<div class="entry-media">
-								<a href="single-episode.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-5.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
-							</div>
-							<header class="entry-header">
-								<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#10: Along the carefree journey through Italy</a></h2>
-								<div class="entry-meta">
-									<span class="posted-in">
-										<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
-										<span class="posted-on">
-											<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">Aug 15, 2023</span><span class="updated">Aug 23, 2023</span></a></span>
-									</span>
-								</div>
-							</header>
-						</article>
-						<article class="entry entry-episode has-post-thumbnail">
-							<div class="entry-media">
-								<a href="single-episode.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-6.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
-							</div>
-							<header class="entry-header">
-								<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#9: There's always something to do but rest</a></h2>
-								<div class="entry-meta">
-									<span class="posted-in">
-										<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
-										<span class="posted-on">
-											<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">Aug 4, 2023</span><span class="updated">Aug 5, 2023</span></a></span>
-									</span>
-								</div>
-							</header>
-						</article>
-						<article class="entry entry-episode has-post-thumbnail">
-							<div class="entry-media">
-								<a href="single-episode.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-7.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
-							</div>
-							<header class="entry-header">
-								<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#8: What if my paths go back home</a></h2>
-								<div class="entry-meta">
-									<span class="posted-in">
-										<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
-										<span class="posted-on">
-											<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">Jul 29, 2023</span><span class="updated">Jul 29, 2023</span></a></span>
-									</span>
-								</div>
-							</header>
-						</article>
-						<article class="entry entry-episode has-post-thumbnail">
-							<div class="entry-media">
-								<a href="single-episode.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-8.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
-							</div>
-							<header class="entry-header">
-								<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#7: Nature's balance must be restored now</a></h2>
-								<div class="entry-meta">
-									<span class="posted-in">
-										<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
-										<span class="posted-on">
-											<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">Jul 21, 2023</span><span class="updated">Jul 21, 2023</span></a></span>
-									</span>
-								</div>
-							</header>
-						</article>
-						<article class="entry entry-episode episode-type-video has-post-thumbnail">
-							<div class="entry-media">
-								<a href="single-episode-video.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-9.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
-							</div>
-							<header class="entry-header">
-								<h2 class="entry-title"><a href="single-episode-video.html" rel="bookmark">#6: The beauty of a clear night sky</a></h2>
-								<div class="entry-meta">
-									<span class="posted-in">
-										<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
-										<span class="posted-on">
-											<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode-video.html" rel="bookmark"><span class="entry-date published">Jun 17, 2023</span><span class="updated">Jun 17, 2023</span></a></span>
-									</span>
-								</div>
-							</header>
-						</article>
-						<article class="entry entry-episode has-post-thumbnail">
-							<div class="entry-media">
-								<a href="single-episode.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-10.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
-							</div>
-							<header class="entry-header">
-								<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#5: Some things I'll never forget</a></h2>
-								<div class="entry-meta">
-									<span class="posted-in">
-										<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
-										<span class="posted-on">
-											<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">Jun 9, 2023</span><span class="updated">Jun 9, 2023</span></a></span>
-									</span>
-								</div>
-							</header>
-						</article>
-						<article class="entry entry-episode has-post-thumbnail">
-							<div class="entry-media">
-								<a href="single-episode.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-11.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
-							</div>
-							<header class="entry-header">
-								<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#4: The serenity of a blue calm sky</a></h2>
-								<div class="entry-meta">
-									<span class="posted-in">
-										<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
-										<span class="posted-on">
-											<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">Jun 2, 2023</span><span class="updated">Jun 2, 2023</span></a></span>
-									</span>
-								</div>
-							</header>
-						</article>
-						<article class="entry entry-episode has-post-thumbnail">
-							<div class="entry-media">
-								<a href="single-episode.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-13.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
-							</div>
-							<header class="entry-header">
-								<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#3: It is not easy to stay still and do nothing</a></h2>
-								<div class="entry-meta">
-									<span class="posted-in">
-										<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
-										<span class="posted-on">
-											<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">May 29, 2023</span><span class="updated">May 29, 2023</span></a></span>
-									</span>
-								</div>
-							</header>
-						</article>
-						<article class="entry entry-episode has-post-thumbnail">
-							<div class="entry-media">
-								<a href="single-episode.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-14.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
-							</div>
-							<header class="entry-header">
-								<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#2: On the road again and missing family</a></h2>
-								<div class="entry-meta">
-									<span class="posted-in">
-										<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
-										<span class="posted-on">
-											<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">May 29, 2023</span><span class="updated">May 29, 2023</span></a></span>
-									</span>
-								</div>
-							</header>
-						</article>
-						<div class="pagination">
-							<span aria-current="page" class="page-numbers current"><span class="screen-reader-text">Page </span>1</span>
-							<a class="page-numbers" href="episodes.html"><span class="screen-reader-text">Page </span>2</a>
-							<a class="next page-numbers" href="episodes.html"><span class="screen-reader-text">Next Page </span></a>
-						</div>
-					</div>
+			<div class="featured-cover">
+				<a href="single-episode.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-1.jpg" alt=""><span class="flash">new</span><span class="shine-canvas"></span></a>
+			</div>
+			<div class="featured-actions">
+				<div class="featured-actions-main">
+					<!-- <a href="#"><span class="mdi mdi-podcast"></span> Subscribe on Apple Podcasts</a> -->
+					<!-- <a href="#"><span class="mdi mdi-rss"></span> Subscribe using RSS Feed</a> -->
+				</div>
+				<div class="featured-actions-secondary">
+					<a href="episodes.html">Todos os episódios <span class="mdi mdi-trending-neutral"></span></a>
 				</div>
 			</div>
 		</div>
+		<video src="../../static/media/sample-featured-video2.mp4" poster="../../static/tmp/sample-featured-video2.jpg" preload="metadata" muted="" autoplay="" loop="" width="1320" height="756"></video>
+	</div>
+</header>
 
-	
-
-		<!-- <footer class="sales-box">
-			<div class="wrapper">
-				<div class="sales-box-cover">
-					<a href="#" class="shine-on-hover"><img src="../../static/images/sample-540x540-2.jpg" width="540" height="540" loading="lazy" alt=""><span class="shine-canvas"></span></a>
-				</div>
-				<div class="sales-box-content">
-					<h2>New Stuff Each Week!</h2>
-					<p>Listen below and order your copy from Amazon, iTunes or your favorite record store. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia conseqa untur magni dolores eos qui ratione sequi.</p>
-					<p><a href="#" class="button button-primary"><span class="mdi mdi-amazon"></span> Amazon</a> <a href="#" class="button button-primary"><span class="mdi mdi-apple"></span> iTunes</a> <a href="#" class="button button-primary"><span class="mdi mdi-spotify"></span> Spotify</a></p>
+<div id="content" class="site-content">
+	<div class="wrapper">
+		<div class="entry-content">
+			<div class="post-listing style-grid align-content-max">
+				<article class="entry entry-episode has-post-thumbnail">
+					<div class="entry-media">
+						<a href="single-episode.html" class="shine-on-hover"><img src="../../static/../../static/images/sample-540x540-1.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
+					</div>
+					<header class="entry-header">
+						<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#13: The joy of putting ideas into reality and pen to paper</a></h2>
+						<div class="entry-meta">
+							<span class="posted-in">
+								<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
+								<span class="posted-on">
+									<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">Sep 13, 2023</span><span class="updated">Sep 13, 2023</span></a>
+								</span>
+							</span>
+						</div>
+					</header>
+				</article>
+				<article class="entry entry-episode has-post-thumbnail">
+					<div class="entry-media">
+						<a href="single-episode.html" class="shine-on-hover"><img src="../../static/../../static/images/sample-540x540-3.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
+					</div>
+					<header class="entry-header">
+						<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#12: Visiting my best friend's city for the first time</a></h2>
+						<div class="entry-meta">
+							<span class="posted-in">
+								<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
+								<span class="posted-on">
+									<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">Sep 3, 2023</span><span class="updated">Sep 4, 2023</span></a></span>
+							</span>
+						</div>
+					</header>
+				</article>
+				<article class="entry entry-episode episode-type-video has-post-thumbnail">
+					<div class="entry-media">
+						<a href="single-episode-video.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-4.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
+					</div>
+					<header class="entry-header">
+						<h2 class="entry-title"><a href="single-episode-video.html" rel="bookmark">#11: An interesting watch I would definitely recommend</a></h2>
+						<div class="entry-meta">
+							<span class="posted-in">
+								<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
+								<span class="posted-on">
+									<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">Aug 23, 2023</span><span class="updated">Aug 23, 2023</span></a></span>
+							</span>
+						</div>
+					</header>
+				</article>
+				<article class="entry entry-episode has-post-thumbnail">
+					<div class="entry-media">
+						<a href="single-episode.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-5.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
+					</div>
+					<header class="entry-header">
+						<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#10: Along the carefree journey through Italy</a></h2>
+						<div class="entry-meta">
+							<span class="posted-in">
+								<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
+								<span class="posted-on">
+									<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">Aug 15, 2023</span><span class="updated">Aug 23, 2023</span></a></span>
+							</span>
+						</div>
+					</header>
+				</article>
+				<article class="entry entry-episode has-post-thumbnail">
+					<div class="entry-media">
+						<a href="single-episode.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-6.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
+					</div>
+					<header class="entry-header">
+						<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#9: There's always something to do but rest</a></h2>
+						<div class="entry-meta">
+							<span class="posted-in">
+								<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
+								<span class="posted-on">
+									<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">Aug 4, 2023</span><span class="updated">Aug 5, 2023</span></a></span>
+							</span>
+						</div>
+					</header>
+				</article>
+				<article class="entry entry-episode has-post-thumbnail">
+					<div class="entry-media">
+						<a href="single-episode.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-7.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
+					</div>
+					<header class="entry-header">
+						<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#8: What if my paths go back home</a></h2>
+						<div class="entry-meta">
+							<span class="posted-in">
+								<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
+								<span class="posted-on">
+									<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">Jul 29, 2023</span><span class="updated">Jul 29, 2023</span></a></span>
+							</span>
+						</div>
+					</header>
+				</article>
+				<article class="entry entry-episode has-post-thumbnail">
+					<div class="entry-media">
+						<a href="single-episode.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-8.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
+					</div>
+					<header class="entry-header">
+						<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#7: Nature's balance must be restored now</a></h2>
+						<div class="entry-meta">
+							<span class="posted-in">
+								<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
+								<span class="posted-on">
+									<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">Jul 21, 2023</span><span class="updated">Jul 21, 2023</span></a></span>
+							</span>
+						</div>
+					</header>
+				</article>
+				<article class="entry entry-episode episode-type-video has-post-thumbnail">
+					<div class="entry-media">
+						<a href="single-episode-video.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-9.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
+					</div>
+					<header class="entry-header">
+						<h2 class="entry-title"><a href="single-episode-video.html" rel="bookmark">#6: The beauty of a clear night sky</a></h2>
+						<div class="entry-meta">
+							<span class="posted-in">
+								<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
+								<span class="posted-on">
+									<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode-video.html" rel="bookmark"><span class="entry-date published">Jun 17, 2023</span><span class="updated">Jun 17, 2023</span></a></span>
+							</span>
+						</div>
+					</header>
+				</article>
+				<article class="entry entry-episode has-post-thumbnail">
+					<div class="entry-media">
+						<a href="single-episode.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-10.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
+					</div>
+					<header class="entry-header">
+						<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#5: Some things I'll never forget</a></h2>
+						<div class="entry-meta">
+							<span class="posted-in">
+								<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
+								<span class="posted-on">
+									<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">Jun 9, 2023</span><span class="updated">Jun 9, 2023</span></a></span>
+							</span>
+						</div>
+					</header>
+				</article>
+				<article class="entry entry-episode has-post-thumbnail">
+					<div class="entry-media">
+						<a href="single-episode.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-11.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
+					</div>
+					<header class="entry-header">
+						<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#4: The serenity of a blue calm sky</a></h2>
+						<div class="entry-meta">
+							<span class="posted-in">
+								<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
+								<span class="posted-on">
+									<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">Jun 2, 2023</span><span class="updated">Jun 2, 2023</span></a></span>
+							</span>
+						</div>
+					</header>
+				</article>
+				<article class="entry entry-episode has-post-thumbnail">
+					<div class="entry-media">
+						<a href="single-episode.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-13.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
+					</div>
+					<header class="entry-header">
+						<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#3: It is not easy to stay still and do nothing</a></h2>
+						<div class="entry-meta">
+							<span class="posted-in">
+								<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
+								<span class="posted-on">
+									<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">May 29, 2023</span><span class="updated">May 29, 2023</span></a></span>
+							</span>
+						</div>
+					</header>
+				</article>
+				<article class="entry entry-episode has-post-thumbnail">
+					<div class="entry-media">
+						<a href="single-episode.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-14.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
+					</div>
+					<header class="entry-header">
+						<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#2: On the road again and missing family</a></h2>
+						<div class="entry-meta">
+							<span class="posted-in">
+								<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
+								<span class="posted-on">
+									<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">May 29, 2023</span><span class="updated">May 29, 2023</span></a></span>
+							</span>
+						</div>
+					</header>
+				</article>
+				<div class="pagination">
+					<span aria-current="page" class="page-numbers current"><span class="screen-reader-text">Page </span>1</span>
+					<a class="page-numbers" href="episodes.html"><span class="screen-reader-text">Page </span>2</a>
+					<a class="next page-numbers" href="episodes.html"><span class="screen-reader-text">Next Page </span></a>
 				</div>
 			</div>
-			<img src="../../static/images/sample-featured1.jpg" alt="">
-		</footer> -->
-
-		<script src="../../static/js/fancybox.min.js"></script>
-		<script src="../../static/js/functions.js"></script>
-
-	</body>
-</html>
+		</div>
+	</div>
+</div>
+<!-- <footer class="sales-box">
+	<div class="wrapper">
+		<div class="sales-box-cover">
+			<a href="#" class="shine-on-hover"><img src="../../static/images/sample-540x540-2.jpg" width="540" height="540" loading="lazy" alt=""><span class="shine-canvas"></span></a>
+		</div>
+		<div class="sales-box-content">
+			<h2>New Stuff Each Week!</h2>
+			<p>Listen below and order your copy from Amazon, iTunes or your favorite record store. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia conseqa untur magni dolores eos qui ratione sequi.</p>
+			<p><a href="#" class="button button-primary"><span class="mdi mdi-amazon"></span> Amazon</a> <a href="#" class="button button-primary"><span class="mdi mdi-apple"></span> iTunes</a> <a href="#" class="button button-primary"><span class="mdi mdi-spotify"></span> Spotify</a></p>
+		</div>
+	</div>
+	<img src="../../static/images/sample-featured1.jpg" alt="">
+</footer> -->
+{% endblock %}

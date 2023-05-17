@@ -5871,7 +5871,7 @@ body:not(.has-sidebar) .alignfull {
 	}
 
 	.home .main-navigation .menu-item-scheme a:after {
-		content: "Toggle color scheme";
+		content: "Alternar cores";
 		font-size: 1rem;
 		position: absolute;
 		width: 165px;

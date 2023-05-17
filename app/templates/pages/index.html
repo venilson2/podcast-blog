@@ -6,12 +6,12 @@
 		<div class="wrapper">
 			<div class="featured-episode">
 				<div class="featured-episode-text">
-					<p class="text-uppercase text-weight-medium text-opacity-75">Episódio em destaque</p>
-					<h1 class="display"><a href="single-episode.html">#13: The joy of putting ideas into reality and pen to paper</a></h1>
-					<p>Vince Smith met bandmates Jim Kelly and Nancy Gibbs at a Sex Pistols concert, where he tried to kiss Sid Vicious' guitar and got a bloody nose. Together they formed Aftershock.</p>
+					<p class="text-uppercase text-weight-medium text-opacity-75">episódio em destaque</p>
+					<h1 class="display"><a href="single-episode.html">Nº 13: A alegria de colocar ideias em realidade e caneta no papel</a></h1>
+					<p>Vince Smith conheceu os companheiros de banda Jim Kelly e Nancy Gibbs em um show do Sex Pistols, onde ele tentou beijar a guitarra de Sid Vicious e ficou com o nariz sangrando. Juntos, eles formaram Aftershock.</p>
 				</div>
 				<div class="episode-player episode-type-audio">
-					<audio><source src="../../static/media/preview1.mp3" type="audio/mpeg"></audio>
+					<audio><source src="{{url_for('static', filename='media/preview1.mp3')}}" type="audio/mpeg"></audio>
 					<div class="media-controls">
 						<button class="media-play-pause"></button>
 						<button class="media-rate" data-rates="1.5 0.5 1" title="Playback speed">1x</button>
@@ -24,19 +24,19 @@
 				</div>
 			</div>
 			<div class="featured-cover">
-				<a href="single-episode.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-1.jpg" alt=""><span class="flash">new</span><span class="shine-canvas"></span></a>
+				<a href="single-episode.html" class="shine-on-hover"><img src="{{url_for('static', filename='images/sample-540x540-1.jpg')}}" alt=""><span class="flash">new</span><span class="shine-canvas"></span></a>
 			</div>
 			<div class="featured-actions">
-				<div class="featured-actions-main">
-					<!-- <a href="#"><span class="mdi mdi-podcast"></span> Subscribe on Apple Podcasts</a> -->
-					<!-- <a href="#"><span class="mdi mdi-rss"></span> Subscribe using RSS Feed</a> -->
-				</div>
+				<!-- <div class="featured-actions-main">
+					<a href="#"><span class="mdi mdi-podcast"></span> Subscribe on Apple Podcasts</a>
+					<a href="#"><span class="mdi mdi-rss"></span> Subscribe using RSS Feed</a>
+				</div> -->
 				<div class="featured-actions-secondary">
 					<a href="episodes.html">Todos os episódios <span class="mdi mdi-trending-neutral"></span></a>
 				</div>
 			</div>
 		</div>
-		<video src="../../static/media/sample-featured-video2.mp4" poster="../../static/tmp/sample-featured-video2.jpg" preload="metadata" muted="" autoplay="" loop="" width="1320" height="756"></video>
+		<video src="{{url_for('static', filename='media/sample-featured-video2.mp4')}}" poster="{{url_for('static', filename='tmp/sample-featured-video2.jpg')}}" preload="metadata" muted="" autoplay="" loop="" width="1320" height="756"></video>
 	</div>
 </header>
 
@@ -46,7 +46,7 @@
 			<div class="post-listing style-grid align-content-max">
 				<article class="entry entry-episode has-post-thumbnail">
 					<div class="entry-media">
-						<a href="single-episode.html" class="shine-on-hover"><img src="../../static/../../static/images/sample-540x540-1.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
+						<a href="single-episode.html" class="shine-on-hover"><img src="{{url_for('static', filename='images/sample-540x540-1.jpg')}}" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
 					</div>
 					<header class="entry-header">
 						<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#13: The joy of putting ideas into reality and pen to paper</a></h2>
@@ -62,7 +62,7 @@
 				</article>
 				<article class="entry entry-episode has-post-thumbnail">
 					<div class="entry-media">
-						<a href="single-episode.html" class="shine-on-hover"><img src="../../static/../../static/images/sample-540x540-3.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
+						<a href="single-episode.html" class="shine-on-hover"><img src="{{url_for('static', filename='images/sample-540x540-3.jpg')}}" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
 					</div>
 					<header class="entry-header">
 						<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#12: Visiting my best friend's city for the first time</a></h2>
@@ -77,7 +77,7 @@
 				</article>
 				<article class="entry entry-episode episode-type-video has-post-thumbnail">
 					<div class="entry-media">
-						<a href="single-episode-video.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-4.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
+						<a href="single-episode-video.html" class="shine-on-hover"><img src="{{url_for('static', filename='images/sample-540x540-4.jpg')}}" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
 					</div>
 					<header class="entry-header">
 						<h2 class="entry-title"><a href="single-episode-video.html" rel="bookmark">#11: An interesting watch I would definitely recommend</a></h2>
@@ -92,7 +92,7 @@
 				</article>
 				<article class="entry entry-episode has-post-thumbnail">
 					<div class="entry-media">
-						<a href="single-episode.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-5.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
+						<a href="single-episode.html" class="shine-on-hover"><img src="{{url_for('static', filename='images/sample-540x540-5.jpg')}}" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
 					</div>
 					<header class="entry-header">
 						<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#10: Along the carefree journey through Italy</a></h2>
@@ -107,7 +107,7 @@
 				</article>
 				<article class="entry entry-episode has-post-thumbnail">
 					<div class="entry-media">
-						<a href="single-episode.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-6.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
+						<a href="single-episode.html" class="shine-on-hover"><img src="{{url_for('static', filename='images/sample-540x540-6.jpg')}}" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
 					</div>
 					<header class="entry-header">
 						<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#9: There's always something to do but rest</a></h2>
@@ -122,7 +122,7 @@
 				</article>
 				<article class="entry entry-episode has-post-thumbnail">
 					<div class="entry-media">
-						<a href="single-episode.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-7.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
+						<a href="single-episode.html" class="shine-on-hover"><img src="{{url_for('static', filename='images/sample-540x540-7.jpg')}}" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
 					</div>
 					<header class="entry-header">
 						<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#8: What if my paths go back home</a></h2>
@@ -137,7 +137,7 @@
 				</article>
 				<article class="entry entry-episode has-post-thumbnail">
 					<div class="entry-media">
-						<a href="single-episode.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-8.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
+						<a href="single-episode.html" class="shine-on-hover"><img src="{{url_for('static', filename='images/sample-540x540-8.jpg')}}" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
 					</div>
 					<header class="entry-header">
 						<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#7: Nature's balance must be restored now</a></h2>
@@ -152,7 +152,7 @@
 				</article>
 				<article class="entry entry-episode episode-type-video has-post-thumbnail">
 					<div class="entry-media">
-						<a href="single-episode-video.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-9.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
+						<a href="single-episode-video.html" class="shine-on-hover"><img src="{{url_for('static', filename='images/sample-540x540-9.jpg')}}" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
 					</div>
 					<header class="entry-header">
 						<h2 class="entry-title"><a href="single-episode-video.html" rel="bookmark">#6: The beauty of a clear night sky</a></h2>
@@ -167,7 +167,7 @@
 				</article>
 				<article class="entry entry-episode has-post-thumbnail">
 					<div class="entry-media">
-						<a href="single-episode.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-10.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
+						<a href="single-episode.html" class="shine-on-hover"><img src="{{url_for('static', filename='images/sample-540x540-10.jpg')}}" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
 					</div>
 					<header class="entry-header">
 						<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#5: Some things I'll never forget</a></h2>
@@ -182,7 +182,7 @@
 				</article>
 				<article class="entry entry-episode has-post-thumbnail">
 					<div class="entry-media">
-						<a href="single-episode.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-11.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
+						<a href="single-episode.html" class="shine-on-hover"><img src="{{url_for('static', filename='images/sample-540x540-11.jpg')}}" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
 					</div>
 					<header class="entry-header">
 						<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#4: The serenity of a blue calm sky</a></h2>
@@ -197,7 +197,7 @@
 				</article>
 				<article class="entry entry-episode has-post-thumbnail">
 					<div class="entry-media">
-						<a href="single-episode.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-13.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
+						<a href="single-episode.html" class="shine-on-hover"><img src="{{url_for('static', filename='images/sample-540x540-13.jpg')}}" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
 					</div>
 					<header class="entry-header">
 						<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#3: It is not easy to stay still and do nothing</a></h2>
@@ -212,7 +212,7 @@
 				</article>
 				<article class="entry entry-episode has-post-thumbnail">
 					<div class="entry-media">
-						<a href="single-episode.html" class="shine-on-hover"><img src="../../static/images/sample-540x540-14.jpg" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
+						<a href="single-episode.html" class="shine-on-hover"><img src="{{url_for('static', filename='images/sample-540x540-14.jpg')}}" alt="" width="540" height="540"><span class="shine-canvas"></span></a>
 					</div>
 					<header class="entry-header">
 						<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#2: On the road again and missing family</a></h2>
@@ -234,17 +234,5 @@
 		</div>
 	</div>
 </div>
-<!-- <footer class="sales-box">
-	<div class="wrapper">
-		<div class="sales-box-cover">
-			<a href="#" class="shine-on-hover"><img src="../../static/images/sample-540x540-2.jpg" width="540" height="540" loading="lazy" alt=""><span class="shine-canvas"></span></a>
-		</div>
-		<div class="sales-box-content">
-			<h2>New Stuff Each Week!</h2>
-			<p>Listen below and order your copy from Amazon, iTunes or your favorite record store. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia conseqa untur magni dolores eos qui ratione sequi.</p>
-			<p><a href="#" class="button button-primary"><span class="mdi mdi-amazon"></span> Amazon</a> <a href="#" class="button button-primary"><span class="mdi mdi-apple"></span> iTunes</a> <a href="#" class="button button-primary"><span class="mdi mdi-spotify"></span> Spotify</a></p>
-		</div>
-	</div>
-	<img src="../../static/images/sample-featured1.jpg" alt="">
-</footer> -->
+
 {% endblock %}
